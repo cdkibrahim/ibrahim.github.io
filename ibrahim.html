@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Ibrahim Miah | Designer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --gold: #d4af37;
+      --gold-soft: rgba(212,175,55,0.15);
+      --white: #ffffff;
+      --gray: #bfbfbf;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ---------- Global ---------- */
+    section {
+      padding: 70px 20px;
+    }
+
+    h1, h2 {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--gray);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 40px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      margin-top: 25px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: radial-gradient(circle at top, var(--gold-soft), transparent 60%);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: var(--white);
+      font-weight: 400;
+    }
+
+    .hero h3 {
+      font-weight: 400;
+      color: var(--gray);
+      margin-top: 10px;
+    }
+
+    /* ---------- About ---------- */
+    .about {
+      background: #0f0f0f;
+      border-top: 1px solid var(--gold-soft);
+    }
+
+    /* ---------- Skills ---------- */
+    .skills .skill {
+      margin-top: 25px;
+    }
+
+    .bar {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .fill {
+      height: 10px;
+      background: linear-gradient(90deg, var(--gold), #ffdf80);
+      width: 0;
+      animation: load 2s forwards;
+    }
+
+    /* ---------- Projects ---------- */
+    .projects .card {
+      background: #121212;
+      border: 1px solid var(--gold-soft);
+      border-radius: 16px;
+      padding: 25px;
+      margin-top: 25px;
+      transition: transform 0.3s;
+    }
+
+    .projects .card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* ---------- Contact ---------- */
+    .contact a {
+      display: block;
+      margin-top: 15px;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+      color: var(--gray);
+      border-top: 1px solid var(--gold-soft);
+    }
+
+    /* ---------- Animations ---------- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes load {
+      to { width: var(--w); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Md Ibrahim Miah</h1>
+    <span>Designer</span>
+    <h3>প্রিমিয়াম, আধুনিক ও ক্রিয়েটিভ ডিজাইন</h3>
+    <a href="#contact" class="btn">যোগাযোগ করুন</a>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>আমার সম্পর্কে</h2>
+    <p>
+      আমি Md Ibrahim Miah। একজন প্যাশনেট ডিজাইনার, যিনি প্রিমিয়াম ও আধুনিক ডিজাইন তৈরি করতে ভালোবাসি।
+      আমার লক্ষ্য হচ্ছে ক্লায়েন্টদের জন্য ইউনিক, পরিষ্কার এবং হাই-এন্ড ডিজিটাল এক্সপেরিয়েন্স তৈরি করা।
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h2>আমার স্কিল</h2>
+
+    <div class="skill">
+      <p>UI / UX Design</p>
+      <div class="bar"><div class="fill" style="--w:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>Graphic Design</p>
+      <div class="bar"><div class="fill" style="--w:85%"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>Brand Identity</p>
+      <div class="bar"><div class="fill" style="--w:80%"></div></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2>প্রজেক্টসমূহ</h2>
+
+    <div class="card">
+      <h3>প্রিমিয়াম পোর্টফোলিও ডিজাইন</h3>
+      <p>একটি আধুনিক ও হাই-এন্ড পার্সোনাল পোর্টফোলিও ওয়েবসাইট ডিজাইন।</p>
+    </div>
+
+    <div class="card">
+      <h3>ব্র্যান্ড ভিজুয়াল ডিজাইন</h3>
+      <p>বিভিন্ন ব্র্যান্ডের জন্য লোগো ও ভিজুয়াল আইডেন্টিটি ডিজাইন।</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>যোগাযোগ</h2>
+    <p>কাজের জন্য যোগাযোগ করুন</p>
+
+    <a href="mailto:example@email.com">📧 Email</a>
+    <a href="https://wa.me/880000000000" target="_blank">📱 WhatsApp</a>
+    <a href="#">🌐 Facebook</a>
+  </section>
+
+  <footer>
+    © 2026 Md Ibrahim Miah • All Rights Reserved
+  </footer>
+
+</body>
+</html>
